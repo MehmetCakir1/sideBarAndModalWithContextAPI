@@ -171,6 +171,7 @@
   font-size: 2rem;
   border: none;
   cursor: pointer;
+  background-color: transparent;
 }
 
 /*Folowing parts are not necessary I did just because of sliding the buttons  and page names*/ 
