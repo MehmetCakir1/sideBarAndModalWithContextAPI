@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { DataContext } from "./ContextAPI"
+import AppRouter from "./router/AppRouter"
+import "./App.css"
+import {links,social} from "./helper/data"
+import { useState } from "react"
 
-function App() {
+const App = () => {
+  const [linksData,setLinksData]=useState(links)
+  const [socialData,setSocialData]=useState(social)
+  const [isVisible,setIsVisible]=useState(false)
+  const [showModal,setShowModal]=useState(false)
+  // console.log(social);
+  // console.log(links);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <DataContext.Provider value={{links,social,isVisible,setIsVisible,showModal,setShowModal}}>
+        <AppRouter/>
+      </DataContext.Provider>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
