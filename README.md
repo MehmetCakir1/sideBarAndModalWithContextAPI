@@ -1,4 +1,4 @@
-[Click here to see the project](https://slide-bar-and-modal-with-context-api.vercel.app/)
+[Click here to see the project](https://side-bar-and-modal-with-context-api.vercel.app/)
 <br>
 - __useContext Hooks__ <br>
 - __useState Hooks__ <br>
