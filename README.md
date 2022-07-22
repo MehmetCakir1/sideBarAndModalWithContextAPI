@@ -5,7 +5,7 @@
 - __Props/States/Components__<br>
 - __React Router Dom v6__<br>
 - __Modal__<br>
-- __Slidebar__<br>
+- __Sidebar__<br>
 - __Javascript__<br>
 
 <div align="center"><img src="https://github.com/MehmetCakir1/slideBarAndModalWithContextAPI/blob/master/slideBarandModal.gif">
